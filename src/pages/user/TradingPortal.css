@@ -1,0 +1,164 @@
+/* Add to your main CSS file or a dedicated TradingPortal.css */
+
+.loading-container,
+.connect-broker-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+  padding: 2em;
+}
+
+.connect-broker-container h2 {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 0.5em;
+}
+
+.connect-broker-container p {
+  font-size: 1.1em;
+  color: #6c757d;
+  margin-bottom: 1.5em;
+}
+
+.error-message {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 1em;
+  border-radius: 8px;
+  margin-bottom: 1.5em;
+}
+
+.trading-portal {
+  padding: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  background-color: #f4f7f9;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e9ecef;
+  padding: 1.5em;
+}
+
+/* Broker Info */
+.broker-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1em;
+}
+.broker-info h3 {
+  margin: 0 0 0.25em 0;
+  color: #2c3e50;
+}
+.broker-info p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.9em;
+}
+.broker-status {
+  text-align: right;
+}
+.broker-status span {
+  background-color: #d4edda;
+  color: #155724;
+  font-weight: 600;
+  padding: 0.3em 0.8em;
+  border-radius: 1em;
+  font-size: 0.8em;
+}
+
+.broker-actions {
+  display: flex;
+  gap: 1em;
+  border-top: 1px solid #e9ecef;
+  padding-top: 1em;
+  margin-top: 1em;
+}
+
+.status-message {
+    margin-top: 1em;
+    font-weight: 500;
+    color: #155724; /* Default success */
+}
+
+/* KPI Grid */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5em;
+}
+
+.kpi-card h4 {
+  margin: 0 0 0.5em 0;
+  font-size: 1em;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.kpi-value {
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #2c3e50;
+}
+.kpi-value.positive { color: #28a745; }
+.kpi-value.negative { color: #dc3545; }
+
+/* Tabs */
+.tab-navigation {
+  display: flex;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 1.5em;
+}
+
+.tab-navigation button {
+  padding: 0.8em 1.5em;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  color: #6c757d;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px; /* Overlap border */
+  transition: all 0.2s ease-in-out;
+}
+.tab-navigation button:hover {
+  color: #0d6efd;
+}
+.tab-navigation button.active {
+  color: #0d6efd;
+  border-bottom-color: #0d6efd;
+}
+
+.tab-content {
+  /* No extra styles needed unless for animations */
+}
+
+/* General Button Styles */
+.btn {
+  padding: 0.6em 1.2em;
+  font-size: 0.9em;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+.btn-primary { background-color: #0d6efd; color: white; }
+.btn-secondary { background-color: #6c757d; color: white; }
+.btn-danger { background-color: #dc3545; color: white; }
+.btn:disabled { opacity: 0.6; cursor: not-allowed; }

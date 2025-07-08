@@ -194,7 +194,7 @@ export const getPositions = async () => {
 // Get order history
 export const getOrderHistory = async () => {
     try {
-        const response = await axios.get('https://apistocktrading-production.up.railway.app/api/trading/order-history');
+        const response = await axios.get('https://apistocktrading-production.up.railway.app/api/users/me/broker/trades');
         return response.data;
     } catch (error) {
         console.error('Error fetching order history:', error);
